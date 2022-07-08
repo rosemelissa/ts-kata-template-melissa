@@ -17,6 +17,7 @@ function digitalRoot(n: number): number {
         currentSumOfDigits = n;
     } else {
         currentSumOfDigits = digitsToNumArr.reduce((num1, num2) => num1 + num2);
+        currentSumOfDigits = digitalRoot(currentSumOfDigits);
     }
     return currentSumOfDigits;
 }
