@@ -12,9 +12,13 @@ single-digit number is produced. The input will be a non-negative integer.
 function digitalRoot(n: number): number {
     let digitsToStrArr: string[] = n.toString().split('');
     let digitsToNumArr: number[] = digitsToStrArr.map(digit => parseInt(digit));
+    let currentSumOfDigits: number = 0;
     if (digitsToNumArr.length === 1) {
-        return n;
+        currentSumOfDigits = n;
+    } else {
+        currentSumOfDigits = digitsToNumArr.reduce((num1, num2) => num1 + num2);
     }
+    return currentSumOfDigits;
 }
 
 export default digitalRoot;
