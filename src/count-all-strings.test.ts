@@ -1,7 +1,7 @@
 import countAllStrings from "./count-all-strings";
 
 test("returns number of strings from mixed string/number array", () => {
-    expect(countAllStrings([”old”, 10, 20, “pond”, -5, -3])).toBe(2);
+    expect(countAllStrings(['old', 10, 20, 'pond', -5, -3])).toBe(2);
   });
 
 test("returns 0 if there are no strings", () => {

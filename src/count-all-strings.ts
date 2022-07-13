@@ -15,6 +15,9 @@ return the length of STRINGARRAY
 
 */
 
-function countAllStrings(inputArray: any[]): number {}
+function countAllStrings(inputArray: any[]): number {
+    let stringArray: string[] = inputArray.filter(item => typeof item === 'string');
+    return stringArray.length;
+}
 
 export default countAllStrings;
