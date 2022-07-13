@@ -21,8 +21,10 @@ return the length of STRINGARRAY
  * @returns the number of strings in the input array
  */
 function countAllStrings(inputArray: any[]): number {
-    let stringArray: string[] = inputArray.filter(item => typeof item === 'string');
-    return stringArray.length;
+  const stringArray: string[] = inputArray.filter(
+    (item) => typeof item === "string",
+  );
+  return stringArray.length;
 }
 
 export default countAllStrings;
