@@ -1,4 +1,4 @@
-import countAllStrings from "./count-all-strings";
+import countAllStrings from "./0-count-all-strings";
 
 test("returns number of strings from mixed string/number array", () => {
   expect(countAllStrings(["old", 10, 20, "pond", -5, -3])).toBe(2);

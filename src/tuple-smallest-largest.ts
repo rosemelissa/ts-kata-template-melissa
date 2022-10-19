@@ -5,11 +5,11 @@
  * @returns number[]
  */
 function tupleSmallLarge(numA: number, numB: number): number[] {
-    if (numA > numB) {
-        return [numB, numA];
-    } else {
-        return [numA, numB];
-    }
+  if (numA > numB) {
+    return [numB, numA];
+  } else {
+    return [numA, numB];
+  }
 }
 
 export default tupleSmallLarge;

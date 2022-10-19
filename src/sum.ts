@@ -5,7 +5,7 @@
  * @returns sum of numbers
  */
 function sum(numA: number, numB: number): number {
-    return numA + numB;
+  return numA + numB;
 }
 
 export default sum;
